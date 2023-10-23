@@ -41,7 +41,7 @@ text-shadow: 2px 2px 5px black;
 animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@keyframes glow {
   from {
     text-shadow: 0 0 10px black, 0 0 20px #000000, 0 0 30px #3d3c3d, 0 0 40px #404040, 0 0 50px #bfbcbf, 0 0 60px #d2d2d2, 0 0 70px #ffffff;
   }
@@ -136,11 +136,6 @@ img {
     html{
         scroll-behavior: auto; /* Removes scroll animation */
     }
-  
-    .skip a{
-      -webkit-transition: none; /* sets to default setting */
-      transition: none;        /* sets to default setting */
-     }
   
     /*Turn off parallax*/
     header{
