@@ -167,17 +167,11 @@ img {
 
     img {
         width: 300px;
-        height:fit-content;
     }
 
       .nav a {
       font-size: 30px;
       padding: 2.8px 5px;
     } 
-
-    .scroll img{
-      height: 25%;
-      width: 25%;
-    }
 
   }
