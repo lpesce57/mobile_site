@@ -89,7 +89,7 @@ img {
   float: left;
   display:block;
   width: 25%;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   padding: 2.8px 5px;
   text-decoration: none;
@@ -116,7 +116,7 @@ img {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 1px;
     align-items: center;
     justify-content: center;
     justify-items: center;
@@ -130,6 +130,18 @@ img {
   .img_center {
     display:block;
     margin: 0 auto;
+  }
+
+  .scroll {
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .scroll img {
+    padding: 10px;
+    border: none;
   }
 
   @media screen and (prefers-reduced-motion: reduce){
@@ -151,15 +163,21 @@ img {
 
   }
 
-  @media screen and (min-width: 576px) and (max-width: 767px) {
+  @media screen and (min-width: 800px) {
 
     img {
         width: 300px;
+        height:fit-content;
     }
 
       .nav a {
-      font-size: 20px;
+      font-size: 30px;
       padding: 2.8px 5px;
     } 
+
+    .scroll img{
+      height: 25%;
+      width: 25%;
+    }
 
   }
